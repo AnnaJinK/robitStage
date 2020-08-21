@@ -1,0 +1,327 @@
+@import '../../lib/mixin';
+
+$black: #282828;
+$lightgray: #e6e6e6;
+
+.visual {
+  &.curriculum {
+    background: $black url('/images/bg/bg_banner_curriculum.jpg') no-repeat center center / auto 380px;
+  }
+}
+
+.area__eduvision {
+  padding-top: 53px;
+  background: transparent url('/images/bg/bg_curriculum_left.svg') no-repeat left -109px;
+
+  @include for-mobile-tablet-all {
+    padding: 80px percentage(16 / 360) 64px;
+    background: none;
+    box-sizing: border-box;
+
+    .area-inner {
+      > strong {
+        display: block;
+        margin-bottom: 51px;
+        font-size: 25px;
+        color: #000;
+        font-weight: bold;
+        text-align: center;
+      }
+    }
+  }
+
+  .box {
+    display: inline-block;
+
+    @include for-mobile-tablet-all {
+      display: block;
+    }
+  }
+
+  .box__info-text {
+    width: calc(100% - 567px - 50px - 63px - 160px);
+    padding: 172px 63px 0 160px;
+    font-size: 20px;
+    line-height: 26px;
+    color: #000;
+
+    @include for-mobile-tablet-all {
+      width: 100%;
+      max-width: 320px;
+      padding: 0;
+      margin: 45.5px auto 0;
+    }
+
+    strong {
+      display: block;
+      margin-bottom: 40px;
+      font-size: 25px;
+      color: #000;
+      font-weight: bold;
+    }
+
+    .text__big {
+      font-size: 20px;
+    }
+    T{
+      font-size: 18px;
+    }
+    b {
+      font-weight: bold;
+      font-size: 18px;
+    }
+  }
+
+  .box__info-image {
+    width: 567px;
+    height: 545px;
+    padding: 84px 25px;
+    vertical-align: top;
+
+    @include for-mobile-tablet-all {
+      position: relative;
+      z-index: 5;
+      width: percentage(301 / 360);
+      padding: percentage(290 / 360) 0 0 0;
+      height: 0;
+      margin: 0 auto;
+    }
+
+    img {
+      width: 100%;
+      height: auto;
+
+      @include for-mobile-tablet-all {
+        position: absolute;
+        z-index: 6;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        max-width: 100%;
+        max-height: 100%;
+        margin: auto;
+      }
+    }
+  }
+  .box__info-image1 {
+    @include transperantAnimation('ani');
+    padding-top: 60px;
+    display: block;
+    width: 860px;
+    margin: 0 auto;
+    animation: ani .5s ease-in-out .4s;
+    animation-fill-mode: backwards;
+
+    @include for-mobile-tablet-all {
+      width: 100%;
+      height: auto;
+      padding-top: 100px;
+    }
+
+    img {
+      width: 100%;
+      vertical-align: top;
+    }
+  }
+}
+
+.area__stemtoy {
+  margin-bottom: 95.5px;
+  background: transparent url('/images/bg/bg_curriculum_right.svg') no-repeat right bottom;
+
+  @include for-mobile-tablet-all {
+    margin-bottom: 64px;
+    background: none;
+
+    .area-inner {
+      > strong {
+        display: block;
+        margin-bottom: 51px;
+        font-size: 25px;
+        color: #000;
+        font-weight: bold;
+        text-align: center;
+      }
+    }
+  }
+
+  .box {
+    display: inline-block;
+
+    @include for-mobile-tablet-all {
+      display: block;
+    }
+  }
+
+  .box__info-text {
+    width: calc(100% - 576px - 106px - 82px - 100px);
+    padding: 229px 100px 0 82px;
+    font-size: 16px;
+    line-height: 26px;
+    text-align: right;
+
+    @include for-mobile-tablet-all {
+      width: 100%;
+      max-width: 320px;
+      padding: 0;
+      margin: 45.5px auto 0;
+    }
+
+    strong {
+      display: block;
+      margin-bottom: 40px;
+      font-size: 25px;
+      color: #000;
+      font-weight: bold;
+      text-align: right;
+    }
+
+    .text__big {
+      display: block;
+      font-size: 20px;
+      line-height: 31px;
+      text-align: right;
+    }
+  }
+
+  .box__info-image {
+    width: 576px;
+    height: 553px;
+    padding: 85.5px 53px;
+    vertical-align: top;
+
+    @include for-mobile-tablet-all {
+      position: relative;
+      z-index: 5;
+      width: percentage(301 / 360);
+      padding: percentage(289 / 360) 0 0 0;
+      height: 0;
+      margin: 0 auto;
+    }
+
+    img {
+      width: 100%;
+      height: auto;
+
+      @include for-mobile-tablet-all {
+        position: absolute;
+        z-index: 6;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        max-width: 100%;
+        max-height: 100%;
+        margin: auto;
+      }
+    }
+  }
+}
+
+.area__plan {
+  padding-top: 95.5px;
+
+  @include for-mobile-tablet-all {
+    padding: 64px 0 151px;
+  }
+
+  .area__info-list {
+    width: 100%;
+    max-width: 939px;
+    margin: 66.5px auto 0;
+    border: 1px solid $lightgray;
+    box-sizing: border-box;
+
+    @include for-mobile-tablet-all {
+      max-width: 314px;
+      margin: 125px auto 0;
+    }
+
+    .info-list-item,
+    .info-list-item__blank {
+      display: inline-block;
+      width: 33.333%;
+      height: 285px;
+      padding: 43px 32px;
+      vertical-align: top;
+      border-left: 1px solid $lightgray;
+      border-top: 1px solid $lightgray;
+      box-sizing: border-box;
+
+      @include for-mobile-tablet-all {
+        display: block;
+        width: 100%;
+        border-left: 0;
+        border-top: 1px solid $lightgray;
+      }
+
+      &.item1,
+      &.item4,
+      &.item7,
+      &.item10,
+      &.item13 {
+        border-left: 0;
+      }
+
+      &.item1,
+      &.item2,
+      &.item3 {
+        border-top: 0;
+
+        @include for-mobile-tablet-all {
+          border-top: 1px solid $lightgray;
+        }
+      }
+
+      @include for-mobile-tablet-all {
+        &.item1 {
+          border-top: 0;
+        }
+      }
+
+      &.item1,
+      &.item3,
+      &.item5,
+      &.item7,
+      &.item9,
+      &.item11,
+      &.item13 {
+        background-color: #fafafa;
+      }
+
+      h1 {
+        text-align: center;
+        font-size: 25px;
+        color: #000;
+        font-weight: bold;
+        margin-bottom: 12.5px;
+      }
+
+      ol {
+        padding-top: 12.5px;
+
+        li {
+          position: relative;
+          z-index: 2;
+          padding-left: 12px;
+          font-size: 16px;
+          line-height: 25px;
+          color: #000;
+
+          &:before {
+            content: "·";
+            position: absolute;
+            left: 0;
+            z-index: 3;
+            display: inline-block;
+          }
+        }
+      }
+    }
+
+    .info-list-item__blank {
+      background: #fafafa url('/images/common/logo_robotry_curriculum.svg') no-repeat center center;
+    }
+  }
+}

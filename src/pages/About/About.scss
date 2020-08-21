@@ -1,0 +1,582 @@
+@import '../../lib/mixin';
+
+$green: #6abb2a;
+$blue: #248ace;
+$black: #282828;
+
+.visual {
+  &.about {
+    background: $black url('/images/bg/bg_banner_about.jpg') no-repeat center center / auto 380px;
+  }
+}
+
+.area__vision {
+  padding: 141px 0 187px;
+  margin-top: 100px;
+  @include for-mobile-tablet-all {
+    padding: 0px percentage(27 / 360) 71px;
+    box-sizing: border-box;
+  }
+
+  .box__info {
+    width: 100%;
+    margin-top: 100px;
+
+    @include for-mobile-tablet-all {
+      margin-top: 114px;
+    }
+
+    h1 {
+      position: relative;
+      z-index: 3;
+      padding-top: 28px;
+      font-size: 25px;
+      line-height: 50px;
+      text-align: center;
+      color: #282828;
+      font-weight: bold;
+
+      @include for-mobile-tablet-all {
+        padding-top: 60px;
+      }
+
+      &:after {
+        content: "The easiest access to robots";
+        display: inline-block;
+        position: absolute;
+        top: 0;
+        left: 50%;
+        z-index: -1;
+        width: 800px;
+        margin-left: -400px;
+        font-size: 55px;
+        line-height: 50px;
+        color: #e6e6e6;
+
+        @include for-mobile-tablet-all {
+          content: "The easiest access to robots";
+          font-size: 40px;
+          white-space: pre;
+          line-height: 1;
+        }
+      }
+    }
+
+    p {
+      margin-top: 14px;
+      font-size: 20px;
+      color: #282828;
+      line-height: 29px;
+      text-align: center;
+    }
+  }
+
+  ul {
+    position: relative;
+    z-index: 3;
+    margin-top: 96px;
+    height: 277px;
+
+    @include for-mobile-tablet-all {
+      margin-top: 69px;
+      height: auto;
+    }
+
+    .box__info-list-item {
+      position: absolute;
+      top: 0;
+      left: 50%;
+      width: 254px;
+      height: 100%;
+
+      @include for-mobile-tablet-all {
+        position: static;
+        height: 278px;
+      }
+
+      &:first-child {
+        z-index: 1;
+        margin-left: -367.5px;
+        background: transparent url('/images/bg/bg_about_vision1.png') no-repeat center center / 100% auto;
+
+        @include for-mobile-tablet-all {
+          margin: 0 auto;
+        }
+      }
+
+      &:first-child + li {
+        z-index: 2;
+        margin-left: -127px;
+        background: transparent url('/images/bg/bg_about_vision2.png') no-repeat center center / 100% auto;
+
+        @include for-mobile-tablet-all {
+          margin: 58px auto 0;
+        }
+      }
+
+      &:first-child + li + li {
+        z-index: 1;
+        margin-left: 113.5px;
+        background: transparent url('/images/bg/bg_about_vision3.png') no-repeat center center / 100% auto;
+
+        @include for-mobile-tablet-all {
+          margin: 58px auto 0;
+        }
+      }
+
+      div {
+        width: 100%;
+        height: 100%;
+
+        strong,
+        span {
+          display: block;
+          text-align: center;
+        }
+
+        strong {
+          padding-top: 64px;
+          font-size: 35px;
+          color: #fff;
+          font-weight: bold;
+        }
+
+        span {
+          font-size: 18px;
+          line-height: 23px;
+          color: #000;
+          padding: 17px 50px 90px;
+        }
+      }
+    }
+  }
+}
+
+
+.area__members {
+  padding: 240px 0 100px;
+  @include for-mobile-tablet-all {
+    padding: 91px 0 75px;
+  }
+
+  ul {
+    display: table;
+    width: auto;
+    max-width: calc(231px * 4);
+    table-layout: fixed;
+    margin: 50px auto 0;
+
+    @include for-mobile-tablet-all {
+      display: block;
+      table-layout: unset;
+    }
+    .table_row { 
+      display: table-row;
+    } 
+
+    li {
+      display: table-cell;
+      border: 0px solid #e6e6e6; //박스 아웃라인
+      border-left: none;
+      width: 280px;
+      height: auto;
+      vertical-align: top;
+
+      @include for-mobile-tablet-all {
+        display: block;
+        height: auto;
+        border: 0;
+        margin: 0 auto 94px;
+        text-align: center;
+
+        &:last-child {
+          margin-bottom: 0;
+        }
+      }
+
+      &:first-child {
+        border-left: px solid #e6e6e6; //박스 시작 라인
+
+        @include for-mobile-tablet-all {
+          border: 0;
+        }
+      }
+
+      .box {
+        display: block;
+        width: 100%;
+        height: 100%;
+        padding: 10px 40px 33px 50px;
+        box-sizing: border-box;
+
+        @include for-mobile-tablet-all {
+          display: inline-block;
+          max-width: 130px;
+          padding: 0;
+        }
+
+        .box__image {
+          display: block;
+          width: 130px;
+          height: 130px;
+          overflow: hidden;
+          margin: 0px auto;
+
+          img {
+            width: 100%;
+            height: auto;
+          }
+        }
+
+        .box__info {
+          display: block;
+          margin-top: 30px;
+          text-align: center;
+
+          span,
+          strong {
+            display: block;
+          }
+
+          .box__info-title {
+            font-size: 17px;
+            line-height: 22px;
+            color: #9b9b9b;
+            font-weight: bold;
+          }
+
+          .box__info-name {
+            margin-top: 6px;
+            font-size: 18px;
+            font-weight: bold;
+            line-height: 22px;
+            color: #000;
+          }
+
+          .box__info-position {
+            margin-top: 10px;
+            font-size: 15px;
+            line-height: 22px;
+          }
+        }
+      }
+    }
+  }
+}
+
+.area__history{
+
+  
+  padding: 140px 0 0px;
+  
+  box-sizing: border-box;
+  background-color: white;
+  * {
+    box-sizing: border-box;
+  }
+  
+  /* The actual timeline (the vertical ruler) */
+  .timeline {
+    padding: 400px 0 40px;
+    position: relative;
+    max-width: 1245px;
+    margin: 0 auto;
+    @include for-mobile-tablet-all {
+      padding: 40px 0;
+    }
+  }
+  
+  /* The actual timeline (the vertical ruler) */
+  .timeline::after {
+    margin-top: 80px;
+    content: '';
+    position: absolute;
+    width: 3px;
+    background-color: #e6e6e6;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    margin-left: -3px;
+  }
+  
+  /* Container around content */
+  .container {
+    padding: 10px 40px;
+    position: relative;
+    background-color: inherit;
+    width: 50%;
+  }
+  
+  /* The circles on the timeline */
+  .container::after {
+    content: '';
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    right: -17px;
+    background-color: #e6e6e6;
+    border: 0px solid #FF9F55;
+    top: 15px;
+    border-radius: 50%;
+    z-index: 1;
+  }  
+  
+  /* Place the container to the left */
+  .left {
+    margin-top: -200px;
+    left: 0;
+    @include for-mobile-tablet-all {
+      margin-top: auto;
+    }
+  }
+  
+  /* Place the container to the right */
+  .right {
+    margin-top: -250px;
+    left: 50%;
+    @include for-mobile-tablet-all {
+      margin-top: auto;
+    }
+  }
+
+  /* Place the container to the left */
+  .left_H1 {
+    color: $green;
+    font-size: 25px;
+    font-weight: bold;
+    left: 0;
+    @include for-mobile-tablet-all {
+      padding-left: 35px;
+      margin-bottom: 13px;
+      box-sizing: border-box;
+    }
+  }
+  /* Place the container to the right */
+  .right_H1 {
+    color: $blue;
+    font-size: 25px;
+    font-weight: bold;
+    left: 50%;
+    @include for-mobile-tablet-all {
+      padding-left: 35px;
+      margin-bottom: 13px;
+      box-sizing: border-box;
+    }
+  }
+  
+  
+  /* Add arrows to the left container (pointing right) */
+  .left::before {
+    content: " ";
+    height: 0;
+    position: absolute;
+    top: 22px;
+    width: 0;
+    z-index: 1;
+    right: 30px;
+    border: 1px solid #e6e6e6;
+    border-width: 10px 0 10px 10px;
+    border-color: transparent transparent transparent #e6e6e6;
+  }
+  
+  /* Add arrows to the right container (pointing left) */
+  .right::before {
+    content: " ";
+    height: 0;
+    position: absolute;
+    top: 22px;
+    width: 0;
+    z-index: 1;
+    left: 30px;
+    border: 1px solid #e6e6e6;
+    border-width: 10px 10px 10px 0;
+    border-color: transparent #e6e6e6 transparent transparent;
+  }
+  .left_H1::after, .right_H1::after{ // 동그라미 숨기기
+    z-index: -3;
+  }
+  /* Fix the circle for containers on the right side */
+  .right::after {
+    left: -20px;
+  }
+  
+  /* The actual content */
+  .content {
+    color: $black;
+    padding: 30px 40px;
+    background-color: white;
+    position: relative;
+    border: 1.5px solid #e6e6e6;
+    border-radius: 6px;
+    
+    h1{
+      margin: 20px 0 10px;
+      font-size: 22px;
+      font-weight: bolder;
+      @include for-mobile-tablet-all {
+        font-size: 18px;
+      }
+    }
+    .ACTIVITIES{
+      color: $green;
+    }
+    .AWARDS{
+      color: $blue;
+    }
+    h2{
+      font-size: 37px;
+      font-weight: bold;
+      @include for-mobile-tablet-all {
+        font-size: 30px;
+      }
+    }
+    li{
+      font-size: 17px;
+      @include for-mobile-tablet-all {
+        font-size: 15px;
+      }
+    }
+  }
+  
+  /* Media queries - Responsive timeline on screens less than 600px wide */
+  @media screen and (max-width: 600px) {
+  /* Place the timelime to the left */
+    .timeline::after {
+      left: 31px;
+    }
+  
+  /* Full-width containers */
+    .container {
+      width: 100%;
+      padding-left: 70px;
+      padding-right: 25px;
+    }
+  
+  /* Make sure that all arrows are pointing leftwards */
+    .container::before {
+      left: 60px;
+      border: medium solid white;
+      border-width: 10px 10px 10px 0;
+      border-color: transparent white transparent transparent;
+    }
+  
+  /* Make sure all circles are at the same spot */
+    .left::after, .right::after,
+    .left_H1::after, .right_H1::after {
+      left: 15px;
+    }
+  
+  /* Make all right containers behave like the left ones */
+    .right {
+      left: 0%;
+    }
+  }
+}
+
+
+.area__media {
+  position: relative;
+  z-index: 2;
+  padding: 123px 0 23px;
+
+  @include for-mobile-tablet-all {
+    padding: 69px 0 127px;
+  }
+
+  &:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    z-index: -1;
+    display: block;
+    width: 100%;
+    height: 378px;
+    background-color: #fafafa;
+
+    @include for-mobile-tablet-all {
+      display: none;
+    }
+  }
+
+  ul {
+    padding-top: 93px;
+    width: 100%;
+    max-width: calc((274px * 4) + (18px * 3));
+    margin: 0 auto;
+
+    @include for-mobile-tablet-all {
+      padding-top: 90px;
+      max-width: 100%;
+    }
+
+    li {
+      display: inline-block;
+      width: 274px;
+      height: 362px;
+      margin-left: 10px;
+      vertical-align: top;
+      margin-top: 5px;
+
+      @include for-mobile-tablet-all {
+        display: block;
+        margin: 28px auto 0;
+      }
+
+
+
+      .box {
+        display: block;
+        width:100%;
+        height: 100%;
+        border: 1px solid #e6e6e6;
+        border-radius: 5px;
+        box-sizing: border-box;
+
+        @include for-mobile-tablet-all {
+          border-color: #9b9b9b;
+        }
+
+        .box__image {
+          display: block;
+          width: 100%;
+          height: 213px;
+          overflow: hidden;
+
+          img {
+            margin-top: -55px;
+            width: 100%;
+            height: auto;
+          }
+        }
+
+        .box__info {
+          display: block;
+          padding: 24px;
+          margin-top: -55px;
+
+          span,
+          strong {
+            display: block;
+          }
+
+          .box__info-date {
+            font-size: 14px;
+            color: #282828;
+          }
+
+          .box__info-title {
+            margin-top: 10px;
+            font-size: 16px;
+            font-weight: bold;
+            line-height: 22px;
+            color: #282828;
+            letter-spacing: -.5px;
+          }
+        }
+      }
+    }
+  }
+}
+
+
+

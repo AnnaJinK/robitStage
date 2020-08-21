@@ -1,0 +1,15 @@
+# 노드가 담긴 alpine 이미지 가져오기
+FROM node:10.15-alpine
+
+# 작업할 디렉토리 설정
+WORKDIR "/app"
+
+# npm install을 캐싱하기 위해 package.json만 따로 카피
+COPY ./package.json ./
+RUN npm install
+ 
+# 소스 복사 
+COPY . .
+
+#client 소스 실행
+CMD ["npm","run","start"]

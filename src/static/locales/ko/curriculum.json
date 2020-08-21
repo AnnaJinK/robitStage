@@ -1,0 +1,68 @@
+{
+  "plan.title": "Plan (1 - 14주차 과정)",
+  "plan.suffix": "회차",
+  "plan.1.title1": "기계/로봇 공학 개념의 이해",
+  "plan.1.title2": "메커니즘 배우기",
+  "plan.1.title3": "파트1 : 베벨기어",
+  "plan.1.title4": "스시 시리즈 혹은 경찰 포리 조립",
+
+  "plan.2.title1": "메커니즘 배우기",
+  "plan.2.title2": "파트 2: 크랭크",
+  "plan.2.title3": "프린 혹은 마술사 마기 조립",
+
+  "plan.3.title1": "메커니즘 배우기",
+  "plan.3.title2": "파트 3 : 캠/팔로워",
+  "plan.3.title3": "파워블로거 쉐푸 조립",
+
+  "plan.4.title1": "메커니즘 배우기",
+  "plan.4.title2": "파트 4 : 피니언/스퍼기어",
+  "plan.4.title3": "탐정 아르세 조립",
+
+  "plan.5.title1": "메커니즘 배우기",
+  "plan.5.title2": "파트 5 : 슬라이더",
+  "plan.5.title3": "보조마술사 아씨 조립",
+
+  "plan.6.title1": "소프트웨어가 무엇인지 알아보자",
+  "plan.6.title2": "게임을 통해 프로그래밍의 원리를\n배워보자",
+
+  "plan.7.title1": "함수에 대해서 알아보자",
+  "plan.7.title2": "함수를 만들어 엔트리봇과 함께\n미션을 수행해보자",
+
+  "plan.8.title1": "엔트리 환경을 알아보자",
+  "plan.8.title2": "아두이노에 대해서 알아보자",
+
+  "plan.9.title1": "센서에 대해서 알아보자",
+  "plan.9.title2": "엑추에이터에 대해서 알아보자",
+
+  "plan.10.title1": "엔트리로 배우는 아두이노\n프로그래밍",
+  "plan.10.title2": "엑추에이터를 제어해보자",
+  "plan.10.title3": "빛 감지, 소리 감지, 초음파 센서를 사용해보자",
+
+  "plan.11.title1": "엔트리로 배우는 아두이노\n프로그래밍",
+  "plan.11.title2": "함수를 이용해 프로그래밍 해보자",
+
+  "plan.12.title1": "자신만의 로봇 설계하기",
+  "plan.12.title2": "배웠던 기계원리의 계념과 예시 복습",
+  "plan.12.title3": "구조 선택 및 도면 그리기",
+
+  "plan.13.title1": "자신만의 로봇 제작하기",
+  "plan.13.title2": "설계한 도면을 바탕으로 자신만의\n로봇 제작하기",
+
+  "plan.14.title1": "발표하기",
+  "plan.14.title2": "마무리하기, 결과물 발표하기",
+
+  "banner.title": "Curriculum",
+  "banner.subtitle": "쉽고 재미있게 배우는 로봇 공학<br/>하드웨어(기계공학,기구학) 학습과 소프트웨어(프로그래밍) 학습을 통해 로봇을 배웁니다.<br/>균형잡힌 로봇 공학 학습을 제공합니다.",
+  "benefit.first.1": "로봇 교육은<br/>미래이자 현재입니다",
+  "benefit.first.2": "초등학생들은",
+  "benefit.first.3": "<T><a href='https://ko.wikipedia.org/wiki/%ED%94%BC%EC%95%84%EC%A0%9C%EC%9D%98_%EC%9D%B8%EC%A7%80_%EB%B0%9C%EB%8B%AC%EB%A1%A0' target='_blank'><font size='4'>피아제의 인지발달론</a></font> 단계중 <br/>구체적 조작기에 해당됩니다.<br/>로봇을 활용한 교육은 사용자의 창의성과 문제해결 능력을 신장시키는데 매우 효과적이랍니다!<br/><br/>아이들의 흥미 유발을 통해 동기 부여를 줄 수 있고 균형잡힌 교육을 통해 창의적 학습을 지향합니다.<br/>논리적 컴퓨팅 사고능력이 가능한 AI형 인재를 양성합니다.</T>",
+  "benefit.second.1": "로봇 교육은<br/>미래이자 현재입니다",
+  "benefit.second.2": "<T><a href='https://ko.wikipedia.org/wiki/%ED%94%BC%EC%95%84%EC%A0%9C%EC%9D%98_%EC%9D%B8%EC%A7%80_%EB%B0%9C%EB%8B%AC%EB%A1%A0' target='_blank'><font size='4'>피아제의 인지발달론</a></font> 단계중 <br/>구체적 조작기에 해당됩니다.<br/>로봇을 활용한 교육은 사용자의 창의성과 문제해결 능력을 신장시키는데 매우 효과적이랍니다!<br/><br/>아이들의 흥미 유발을 통해 동기 부여를 줄 수 있고 균형잡힌 교육을 통해 창의적 학습을 지향합니다.<br/>논리적 컴퓨팅 사고능력이 가능한 AI형 인재를 양성합니다.</T>",
+  
+  "benefit.third.title": "로보트리의<br/>STEM TOY는 메이커 교육을<br/>접하는 즐거운 첫걸음입니다",
+  "benefit.third.1": "과학(Science), 기술(Technology)<br/>공학(Engineering),수학(Mathematics)",
+  "benefit.third.2": "아이들의 눈높이에 맞게 가르치기 위해<br/>설계된 로보트리의 STEM TOY는 아이들의<br/>첫 메이커 교육을 쉽고 재밌게 만들어줄 것입니다.",
+  "benefit.forth.title": "로보트리의<br/>STEM TOY는 메이커 교육을<br/>접하는 즐거운 첫걸음입니다",
+  "benefit.forth.1": "과학(Science), 기술(Technology)<br/>공학(Engineering),수학(Mathematics)",
+  "benefit.forth.2": "아이들의 눈높이에 맞게 가르치기 위해<br/>설계된 로보트리의 STEM TOY는 아이들의<br/>첫 메이커 교육을 쉽고 재밌게 만들어줄 것입니다."
+}

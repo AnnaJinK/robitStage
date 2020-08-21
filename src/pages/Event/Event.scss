@@ -1,0 +1,317 @@
+@import '../../lib/mixin';
+
+$black: #282828;
+$lightgray: #e6e6e6;
+
+.visual {
+  &.event {
+    background: $black url('/images/bg/bg_banner_event.jpg') no-repeat center center / auto 380px;
+  }
+}
+
+.box__image {
+  pointer-events: none; // 선택 불가
+  display: table;
+  table-layout: fixed;
+  padding-top: 55px;
+  width: auto;
+  max-width: calc(360px * 3);
+  table-layout: fixed;
+  margin: 0 auto;
+  border:1px;
+  
+  img {
+    display: table-cell;
+    overflow: hidden;
+    @include transperantAnimation('ani');
+    width: 860px;
+    animation: ani .5s ease-in-out .2s;
+    animation-fill-mode: backwards;
+    @include for-mobile-all {
+      @include transperantAnimation('ani');
+      max-width: 330px;
+      animation: ani .5s ease-in-out .2s;
+      animation-fill-mode: backwards;
+    }
+  }
+}
+.area__LEFT {
+  padding-top: 53px;
+  
+  background: transparent url('/images/bg/bg_curriculum_left.svg') no-repeat left bottom;
+  @include for-mobile-tablet-all {
+    padding: 80px percentage(16 / 360) 64px;
+    background: none;
+    box-sizing: border-box;
+
+    .area-inner {
+      > strong {
+        display: block;
+        margin-bottom: 51px;
+        font-size: 30px;
+        color: #000;
+        font-weight: bold;
+        text-align: center;
+      }
+    }
+  }
+
+  .box {
+    display: inline-block;
+
+    @include for-mobile-tablet-all {
+      display: block;
+    }
+  }
+  .wrap0{
+    display: inline-block;
+    position: relative;
+    padding: 0em;
+    background: #fff;
+    box-sizing: inherit;
+  }
+  .wrap0_text {
+     border-radius: 50%;
+     font-size: 33px;
+     background: rgba(0,0,0,0.8);
+     color: #fff;
+     transition: opacity .5s;
+     opacity: 0;
+     position: absolute;
+     top: 0em; bottom: 0em; left: 0em; right: 0em;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+   }
+   .wrap0:hover .wrap0_text {
+     opacity: 1;
+   }
+  .box__info-text {
+    width: calc(100% - 567px - 50px - 61px - 160px);
+    padding: 172px 61px 0 160px;
+    font-size: 17px;
+    line-height: 26px;
+    color: #000;
+
+    @include for-mobile-tablet-all {
+      width: 100%;
+      max-width: 320px;
+      padding: 0;
+      margin: 45.5px auto 0;
+    }
+
+    strong {
+      display: block;
+      margin-bottom: 40px;
+      font-size: 33px;
+      color: #000;
+      font-weight: bold;
+    }
+
+    .text__big {
+      font-size: 20px;
+      font-weight: bold;
+      line-height: 29px;
+    }
+    T {
+      font-size: 18px;
+    }
+    b {
+      font-weight: bold;
+      font-size: 18px;
+    }
+  }
+
+  .box__info-image {
+    width: 567px;
+    height: 545px;
+    padding: 130px 25px;
+    vertical-align: top;
+
+    @include for-mobile-tablet-all {
+      position: relative;
+      z-index: 5;
+      width: percentage(301 / 360);
+      padding: percentage(290 / 360) 0 0 0;
+      height: 0;
+      margin: 0 auto;
+    }
+
+    img {
+      width: 100%;
+      display: block;
+      height: auto;
+
+      @include for-mobile-tablet-all {
+        position: absolute;
+        z-index: 6;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        max-width: 100%;
+        max-height: 100%;
+        margin: auto;
+      }
+    }
+  }
+  .blinking{
+    -webkit-animation:blink 1.5s ease-out infinite alternate;
+      -moz-animation:blink 1.5s ease-out infinite alternate;
+      animation:blink 1.5s ease-out infinite alternate;
+  }
+  @-webkit-keyframes blink{
+      0% {opacity:0;}
+      100% {opacity:1;}
+  }
+  @-moz-keyframes blink{
+      0% {opacity:0;}
+      100% {opacity:1;}
+  }
+  @keyframes blink{
+      0% {opacity:0;}
+      100% {opacity:1;}
+  }
+}
+
+.area__RIGHT {
+  padding-top: 53px;
+ /* background: transparent url('/images/bg/bg_curriculum_right.svg') no-repeat right bottom;*/
+  background: transparent url('/images/bg/bg_curriculum_right.svg') no-repeat right bottom;
+
+  @include for-mobile-tablet-all {
+    padding: 80px percentage(16 / 360) 64px;
+    background: none;
+    box-sizing: border-box;
+
+    .area-inner {
+      > strong {
+        display: block;
+        margin-bottom: 51px;
+        font-size: 30px;
+        color: #000;
+        font-weight: bold;
+        text-align: center;
+      }
+    }
+  }
+
+  .box {
+    display: inline-block;
+
+    @include for-mobile-tablet-all {
+      display: block;
+    }
+  }
+  .wrap0{
+    display: inline-block;
+    position: relative;
+    padding: 0em;
+    background: #fff;
+    box-sizing: inherit;
+  }
+  .wrap0_text {
+     border-radius: 50%;
+     font-size: 33px;
+     background: rgba(0,0,0,0.8);
+     color: #fff;
+     transition: opacity .5s;
+     opacity: 0;
+     position: absolute;
+     top: 0em; bottom: 0em; left: 0em; right: 0em;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+   }
+   .wrap0:hover .wrap0_text {
+     opacity: 1;
+   }
+  .box__info-text {
+    width: calc(100% - 576px - 106px - 50px - 100px);
+    padding: 120px 100px 0 50px;
+    font-size: 20px;
+    line-height: 26px;
+    text-align: left;
+
+    @include for-mobile-tablet-all {
+      width: 100%;
+      max-width: 320px;
+      padding: 0;
+      margin: 45.5px auto 0;
+    }
+
+    strong {
+      display: block;
+      margin-bottom: 40px;
+      font-size: 33px;
+      color: #000;
+      font-weight: bold;
+      text-align: left;
+    }
+
+    .text__big {
+      font-size: 20px;
+      font-weight: bold;
+      line-height: 29px;
+      text-align: left;
+    }
+    T {
+      font-size: 18px;
+    }
+    b {
+      font-weight: bold;
+      font-size: 19px;
+    }
+  }
+
+  .box__info-image {
+    width: 576px;
+    height: 553px;
+    padding: 200px 53px;
+    vertical-align: top;
+
+    @include for-mobile-tablet-all {
+      position: relative;
+      z-index: 5;
+      width: percentage(301 / 360);
+      padding: percentage(289 / 360) 0 0 0;
+      height: 0;
+      margin: 0 auto;
+    }
+
+    img {
+      width: 100%;
+      height: auto;
+
+      @include for-mobile-tablet-all {
+        position: absolute;
+        z-index: 6;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        max-width: 100%;
+        max-height: 100%;
+        margin: auto;
+      }
+    }
+  }
+  .blinking{
+    -webkit-animation:blink 0.1s ease-in-out infinite alternate;
+      -moz-animation:blink 0.1s ease-in-out infinite alternate;
+      animation:blink 0.1s ease-in-out infinite alternate;
+  }
+  @-webkit-keyframes blink{
+      0% {opacity:0;}
+      100% {opacity:1;}
+  }
+  @-moz-keyframes blink{
+      0% {opacity:0;}
+      100% {opacity:1;}
+  }
+  @keyframes blink{
+      0% {opacity:0;}
+      100% {opacity:1;}
+  }
+}
+

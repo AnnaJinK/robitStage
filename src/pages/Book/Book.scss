@@ -1,0 +1,264 @@
+@import '../../lib/mixin';
+
+$black: #282828;
+$lightgray: #e6e6e6;
+$book1: #FDDA1A;
+$book2: #94C6E1;
+$book3: #E8E6D6;
+
+.visual {
+  &.book {
+    margin-bottom: 6px;
+    background: $black url('/images/bg/bg_banner_book.jpg') no-repeat center center / auto 380px;
+  }
+}
+
+
+.area__vision {
+  padding: 0px 0px;
+
+  @include for-mobile-tablet-all {
+    padding: 0px percentage(27 / 360) 71px;
+    box-sizing: border-box;
+  }
+
+  .box__info {
+    width: 100%;
+    margin-top: 100px;
+
+    @include for-mobile-tablet-all {
+      margin-top: 114px;
+    }
+
+    h2 {
+      position: relative;
+      z-index: 3;
+      padding-top: 20px;
+      font-size: 25px;
+      line-height: 50px;
+      text-align: center;
+      color: #282828;
+      font-weight: bold;
+
+      @include for-mobile-tablet-all {
+        padding-top: 60px;
+      }
+
+      &:after {
+        content: "TIME MAKER";
+        display: inline-block;
+        position: absolute;
+        top: 0;
+        left: 50%;
+        z-index: -1;
+        width: 800px;
+        margin-left: -400px;
+        font-size: 55px;
+        line-height: 50px;
+        color: #e6e6e6;
+
+        @include for-mobile-tablet-all {
+          content: "TIME MAKER";
+          font-size: 40px;
+          white-space: pre;
+          line-height: 1;
+        }
+      }
+    }
+  }
+}
+
+.area__book{
+  padding: 0px 0 187px;
+  @include for-mobile-tablet-all {
+    padding: 0px percentage(27 / 360) 0px;
+    box-sizing: border-box;
+  }
+  
+  .color_Box {
+    border-spacing: 50px 0;
+    border-collapse: separate;
+    display: table;
+    table-layout: fixed;
+    padding-top: 30px;
+    width: auto;
+    height: auto;
+    max-width: calc(360px * 3);
+    margin: auto;
+    @include for-mobile-tablet-all {
+      border-spacing: 0;  
+    }
+    
+   
+    .table_row { 
+      display: table-row;
+      @include for-mobile-tablet-all {
+        border-spacing: 0 50px;  
+      }
+    } 
+    .specBox1, .specBox2, .specBox3,
+    .specBox4, .specBox5, .specBox6{ 
+      box-shadow: 15px 50px 55px $black;
+      display: table-cell;
+      text-align: center;
+      padding : 10px 0px;
+      border-radius: 25px 90px 0 0;
+      border-style: solid; 
+      border-width: 0px; 
+      word-break: break-all; 
+
+      @include for-mobile-tablet-all { 
+        box-shadow: 0 0 0;
+        display: table-row;
+      }
+    } 
+    .specBox1 { 
+      background-color: $book1;
+    }
+    .specBox2 { 
+      background-color: $book2;
+    } 
+    .specBox3 { 
+      background-color: $book3;
+    } 
+    
+    .txtBox1, .txtBox2, .txtBox3, 
+    .txtBox4, .txtBox5, .txtBox6 { 
+      border-radius: 0 0 70px 70px;
+      display: table-cell;
+      font-weight: bolder;
+      font-size: 25px;
+      border-style: solid; 
+      border-width: 0px; 
+      padding: 15px ;
+      text-align: center;
+      word-break: break-all; 
+
+      @include for-mobile-tablet-all {
+        display: table-row;
+        visibility: hidden;
+        font-weight: normal;
+        font-size: 12px;
+        padding: 10px 10px;
+      }
+      a{
+        font-weight: bolder;
+        font-size: 25px;
+      }
+    } 
+    .txtBox1 { 
+      background-color: $book1; 
+    }
+    .txtBox2 { 
+      background-color: $book2; 
+    } 
+    .txtBox3 { 
+      background-color: $book3; 
+    } 
+  }
+
+  .scale {
+    width:450px; 
+    height:auto; 
+    overflow: hidden;
+    @include for-mobile-tablet-all {
+      padding: 0;
+      width:300px; 
+    }
+  }
+  .scale img { 
+    transform:scale(1); 
+    transition:transform 0.5s linear;
+  }
+  .scale:hover img { 
+  transform:scale(1.1);             /*  default */
+  -webkit-transform:scale(1.1);     /*  크롬 */
+  -moz-transform:scale(1.1);       /* FireFox */
+  -o-transform:scale(1.1);           /* Opera */
+  }
+
+  
+  
+
+  .box {
+    display: block;
+    box-sizing: border-box;
+
+    @include for-mobile-tablet-all {
+      display: inline-block;
+      max-width: 360px;
+      padding: 0;
+    }
+
+    .wrap {
+      display: inline-block;
+      position: relative;
+      padding: 0em;
+      width: 100%;
+      height: 100%;
+      //box-sizing: inherit;
+    }
+    .wrap_text {
+      box-shadow: 10px 40px 60px $black;
+      border-radius: 0%;
+      font-size: 33px;
+      background: $black;
+      color: $lightgray;
+      transition: opacity .5s;
+      opacity: 0;
+      position: absolute;
+      top: 11em; bottom: 1em; left: 0em; right: 0em;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      @include for-mobile-tablet-all{
+        box-shadow: 0 0 0;
+        opacity: 0.9;
+        top: 9em; bottom: 1em; left: 0em; right: 0em;
+      }
+     }
+     .wrap:hover .wrap_text {
+       opacity: 0.9;
+       @include for-mobile-tablet-all{
+        opacity: 0.9;
+      }
+     }
+
+    .box__image {
+      pointer-events: none; // 선택 불가
+      display: table;
+      table-layout: fixed;
+      padding-top: 0px;
+      width: auto;
+      max-width: calc(360px * 3);
+      margin: 0 auto;
+      border:1px;
+
+      @include for-mobile-tablet-all {
+        display: inline-block;
+        padding-left: -100px;
+      }
+      
+      
+      img {
+        border-radius: 100px 130px 0 0;
+        display: table-cell;
+        overflow: hidden;
+        width: 350px;
+        height: auto;
+        @include transperantAnimation('ani');
+        animation: ani 1s ease-in-out .2s;
+        animation-fill-mode: backwards;
+        @include for-mobile-all {
+          @include transperantAnimation('ani');
+          width: 300px;
+          animation: ani .5s ease-in-out .2s;
+          animation-fill-mode: backwards;
+        }
+      } 
+    }
+  }
+}
+
+
+

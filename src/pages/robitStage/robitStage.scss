@@ -1,0 +1,607 @@
+@import '../../lib/mixin';
+
+$white: #fff;
+$black: #282828;
+
+.visual {
+    &.robitStage {
+      background: $black url('/images/bg/bg_banner_portfolio.jpg') no-repeat center center / auto 380px;
+    }
+    
+  }
+.area_robitStage{
+  padding: 0px 0px 100px 0px;
+  @include for-mobile-tablet-all {
+    padding: 0px 0px 100px 0px;
+  }
+
+  .box__image,.robit_stage_detail{
+    pointer-events: none; // 선택 불가
+    display: table;
+    table-layout: fixed;
+    padding-top: 55px;
+    width: auto;
+    max-width: calc(360px * 3);
+    margin: 0 auto;
+    border:1px;
+    
+    img {
+      display: table-cell;
+      overflow: hidden;
+      @include transperantAnimation('ani');
+      width: 860px;
+      height: auto;
+      animation: ani .5s ease-in-out .2s;
+      animation-fill-mode: backwards;
+      @include for-mobile-all {
+        @include transperantAnimation('ani');
+        width: 450px;
+        animation: ani .5s ease-in-out .2s;
+        animation-fill-mode: backwards;
+      }
+    }
+  }
+  .robit_stage_detail{
+    img {
+      display: table-cell;
+      overflow: hidden;
+      @include transperantAnimation('ani');
+      width: 860px;
+      height: auto;
+      animation: ani .5s ease-in-out .2s;
+      animation-fill-mode: backwards;
+      @include for-mobile-all {
+        @include transperantAnimation('ani');
+        width: 375px;
+        animation: ani .5s ease-in-out .2s;
+        animation-fill-mode: backwards;
+      }
+    }
+  }
+
+  .box_whatIs{
+    background: transparent url('/images/contents/robitStage/robitStage_svg_1.svg') no-repeat;
+    text-align: left;
+    display: table;
+    table-layout: fixed;
+    width: auto;
+    max-width: calc(360px * 3);
+    margin: 0 auto;
+    border:1px;
+    @include transperantAnimation('ani');
+    animation: ani .5s ease-in-out .2s;
+    animation-fill-mode: backwards;
+
+    .one {
+      padding-top: 15px;
+      padding-left: 140px;
+      font-size: 30px;
+      font-weight: bold;
+      color: #88B6C7;
+      @include for-mobile-all {
+        padding-left: 80px;
+        font-size: 15px;
+      }
+      p{
+        font-size: 20px;
+        color:$black;
+        @include for-mobile-all {
+          font-size: 10px;
+        }
+      }
+    }
+    .two {
+      padding-top: 110px;
+      padding-left: 260px;
+      font-size: 30px;
+      font-weight: bold;
+      color: #DA9AB2;
+      @include for-mobile-all {
+        padding-left: 140px;
+        padding-top: 40px;
+        font-size: 15px;
+      }
+      p{
+        font-size: 20px;
+        color:$black;
+        @include for-mobile-all {
+          font-size: 10px;
+        }
+      }
+    }
+    .three {
+      padding-top: 100px;
+      padding-left: 140px;
+      font-size: 30px;
+      font-weight: bold;
+      color: #F5B04F;
+      @include for-mobile-all {
+        padding-left: 80px;
+        padding-top: 30px;
+        font-size: 15px;
+      }
+      p{
+        font-size: 20px;
+        color:$black;
+        @include for-mobile-all {
+          font-size: 10px;
+        }
+      }
+    }
+  }
+  
+  .box__text {
+    display: table;
+    table-layout: fixed;
+    padding-top: 55px;
+    width: auto;
+    max-width: calc(360px * 3);
+    margin-top: 77px;
+    table-layout: fixed;
+    margin: auto;
+
+    @include for-mobile-tablet-all {
+      padding-top: 25px;
+      padding-bottom: 25px;
+      text-align: left;
+    }     
+    .prefix01,.prefix02,.prefix03,.prefix04{
+      margin-top: -20px;
+      width: auto;
+      font-size: 28px;
+      color: #000;
+      @include for-mobile-tablet-all {
+      display: inline-block;
+      font-size: 20px;
+      }
+      &:after {
+        content: "";        
+        display: block;
+        margin-top: 30px;
+        padding: 2px 0 0 0;
+        background-color: #7A7A7A;    
+        @include for-mobile-tablet-all {
+          content: "";        
+          display: block;
+          margin-top: 25px;
+          padding: 2px 0 0 0;
+          background-color: #7A7A7A; 
+        }
+      }
+    }
+    .prefix01 {
+      &:after {
+        width: 730px;   
+        margin-left: 220px;
+        @include for-mobile-tablet-all { 
+          width: 730px;
+          margin-left: 130px;
+        }
+      }
+    }
+    .prefix02 {
+      &:after {
+        width: 730px;   
+        margin-left: 220px;
+        @include for-mobile-tablet-all { 
+          width: 730px;
+          margin-left: 130px;
+        }
+      }
+      
+    }
+    .prefix03 {
+      &:after {
+        width: 775px; 
+        margin-left: 175px;  
+        @include for-mobile-tablet-all { 
+          width: 730px;
+          margin-left: 130px;
+        }
+      }
+    }
+    .prefix04 {
+      &:after {
+        width: 730px;   
+        margin-left: 220px;
+        @include for-mobile-tablet-all { 
+          width: 730px;
+          margin-left: 130px;
+        }
+      }
+    }
+    .title01,.title02,.title03,.title04,
+    .question01,.question02,
+    .ansQ02{
+      
+      background: linear-gradient(#ffffff 65%,#F6F3A6 35%);
+      margin-top: -50px;
+      font-size: 40px;
+      font-weight: bolder;
+      color: #000;
+        
+      @include for-mobile-tablet-all {
+        margin-top: -40px;
+        width: 120px;
+        font-size: 30px;
+        font-weight: bolder;
+        color: #000;
+      }
+    }
+    .title01 {
+      width: 170px;
+      @include for-mobile-tablet-all {
+        width: 120px;
+      }
+    }
+    .title02  {
+      width: 170px;
+      @include for-mobile-tablet-all {
+        width: 120px;
+      }
+    }
+    .title03 {
+      width: 125px;
+      @include for-mobile-tablet-all {
+        width: 90px;
+      }
+    }
+    .title04 {
+      width: 170px;
+      @include for-mobile-tablet-all {
+        width: 120px;
+      }
+    }
+    .question01{
+      text-align: center;
+      width: 540px;
+      font-size: 30px;
+      margin: 100px auto;
+      @include for-mobile-tablet-all {
+        text-align: center;
+        width: 270px;
+        font-size: 15px;
+        margin: auto;
+      }
+    }
+    .question02{
+      text-align: center;
+      width: 700px;
+      font-size: 30px;
+      margin: 100px auto;
+      
+      @include for-mobile-tablet-all {
+        width: 350px;
+        font-size: 15px;
+        margin: auto;
+      }
+    }
+    .ansQ02 {
+      text-align: center;
+      width: 750px;
+      font-size:30px;
+      background: none;
+      margin: -80px auto 150px;
+      @include for-mobile-tablet-all {
+        width: 350px;
+        font-size: 15px;
+        margin: auto;
+      }
+    }
+    
+    .double_quotes {
+      padding: 50px 0px;
+      text-align: center;
+      background: transparent url('/images/contents/robitStage/robitStage_svg_4.svg') no-repeat center / 720px auto;
+      @include transperantAnimation('ani');
+      animation: ani .5s ease-in-out .2s;
+      animation-fill-mode: backwards;
+      @include for-mobile-tablet-all {
+        background: transparent url('/images/contents/robitStage/robitStage_svg_4.svg') no-repeat center / 350px auto;
+      }
+      p {
+        width: auto;
+        font-size: 20px;
+        font-weight: bolder;
+        color: #000;
+        @include for-mobile-tablet-all {
+          font-size: 10px;
+        }
+      }
+    }
+    .composition {
+      padding: 50px 0px;
+      text-align: center;
+      width: auto;
+      font-size: 25px;
+      font-weight: bolder;
+      color: #000;
+      @include for-mobile-tablet-all {
+        font-size: 20px;
+      }
+      .components {
+        padding-top: 15px;
+        font-weight: normal;
+        @include for-mobile-tablet-all {
+          font-size: 13px;
+        }
+        &:before {padding: 0;}
+        &:after {
+          content: "";        
+          display: block;
+          margin: 110px auto 20px;
+          width: 70px;
+          padding: 3px 0 0 0;
+          background-color: #F6F3A6;    
+          @include for-mobile-tablet-all {
+            content: "";        
+            display: block;
+            margin: 70px auto 10px;
+            width: 35px;
+            padding: 3px 0 0 0;
+            background-color: #F6F3A6; 
+          }
+        }
+      }
+      .caution {
+        
+        margin: 110px auto;
+        font-size: 25px;
+        @include for-mobile-tablet-all {
+          font-size: 13px;
+        }
+        b{
+          font-size: 25px;
+          font-weight: bold;
+          @include for-mobile-tablet-all {
+            font-size: 13px;
+          }
+        }
+      }
+    }
+    h2 {
+      width: auto;
+      text-align: center;
+      font-size: 25px;
+      font-weight: bolder;
+      color: #000;
+      @include for-mobile-tablet-all {
+        font-size: 13px;
+      }
+      b { 
+        font-size: 25px; 
+        font-weight: bolder;
+        @include for-mobile-tablet-all {
+          font-size: 13px;
+        }
+      }
+      &:before {
+        content: "";        
+        display: block;
+        margin: 100px auto 20px;
+        width: 50px;
+        padding: 3px 0 0 0;
+        background-color: #F6F3A6;    
+        @include for-mobile-tablet-all {
+          content: "";        
+          margin: 50px auto 10px;
+          width: 35px;
+        }
+      }
+    }
+  }
+  .circles {
+    display: table;
+    table-layout: fixed;
+    max-width: calc(360px * 3);
+    margin: auto;
+    .circle01,.circle02{
+      display: table-cell;
+      text-align: center;
+      border-style: solid; 
+      height: 130px;
+      width: 130px;
+      border-radius: 50%;
+      border-width: 0 10px; 
+      padding: 40px;
+      vertical-align: middle;
+      word-break: break-all; 
+      @include transperantAnimation('ani');
+      animation: ani .5s ease-in-out .2s;
+      animation-fill-mode: backwards;
+      strong{
+        font-size: 40px;
+        font-weight: bolder;
+        @include for-mobile-tablet-all {
+          font-size: 30px;
+        }
+        &:before {
+          content: "";        
+          display: block;
+          margin: 10px auto 1px;
+          width: 120px;
+          padding: 1px 0 0 0;
+          background-color: #B4B4B5;    
+          @include for-mobile-tablet-all {
+            margin: 10px auto 1px;
+            width: 90px;
+          }
+        }
+      }
+      @include for-mobile-tablet-all {
+        font-size: 15px;
+        padding: 20px ;
+      }
+    }
+    .circle01 { 
+      background-color: #E8EA98;
+      border-color: white; 
+      p{
+        font-size: 30px;
+      }
+    }
+    .circle02 { 
+      background-color: #E8EA98;
+      border-color: white; 
+      p{
+        font-size: 15px;
+      }
+    } 
+  }
+
+  .color_Box {
+    display: table;
+    table-layout: fixed;
+    padding-top: 55px;
+    width: auto;
+    max-width: calc(360px * 3);
+    margin: auto;
+   
+    .table_row { 
+      display: table-row;
+    } 
+    .specBox1, .specBox2, 
+    .specBox3 { 
+      display: table-cell;
+      text-align: center;
+      line-height: 28px;
+      font-weight: bold;
+      font-size: 25px;
+      border-style: solid; 
+      width: 130px;
+      border-width: 2px 2px 2px 2px; 
+      padding: 40px 30px;
+      word-break: break-all; 
+      @include transperantAnimation('ani');
+      animation: ani .5s ease-in-out .2s;
+      animation-fill-mode: backwards;
+      @include for-mobile-tablet-all {
+        line-height: 21px;
+        font-weight: bold;
+        font-size: 15px;
+        padding: 20px 0px ;
+      }
+    } 
+    .specBox1 { 
+      background-color: #DBDBDB;
+      border-color: #DBDBDB; 
+    }
+    .specBox2 { 
+      background-color: #E8EA98;
+      border-color: #E8EA98; 
+    } 
+    .specBox3 { 
+      background-color: #FFE088;
+      border-color: #FFE088; 
+    } 
+    
+    .txtBox1, .txtBox2, 
+    .txtBox3 { 
+      display: table-cell;
+      font-weight: bolder;
+      font-size: 20px;
+      border-style: solid; 
+      width: 550px;
+      border-width: 2px 2px 2px 2px; 
+      padding: 30px 20px;
+      word-break: break-all; 
+      @include transperantAnimation('ani');
+      animation: ani 1s ease-in-out .2s;
+      animation-fill-mode: backwards;
+      @include for-mobile-tablet-all {
+        font-weight: normal;
+        font-size: 12px;
+        padding: 10px 10px;
+      }
+    } 
+    .txtBox1 { 
+      border-color: #DBDBDB; 
+    }
+    .txtBox2 { 
+      border-color: #E8EA98; 
+    } 
+    .txtBox3 { 
+      border-color: #FFE088; 
+    } 
+  }
+}
+.box_robit_stage{
+  display: static;
+  width: auto;
+  padding: 100px 0 48px;
+  background: transparent url('/images/contents/robitStage/robitStage_svg_3.svg') no-repeat right center / 900px auto;
+  @include for-mobile-tablet-all {
+    background: transparent url('/images/contents/robitStage/robitStage_3.png') no-repeat top/ 200px auto;
+  }
+  .one {
+    max-width: calc(360px * 3);
+    margin: 0 auto;
+    border:1px;
+    font-size: 35px;
+    font-weight: bold;
+    color: #000;
+    @include for-mobile-tablet-all {
+      margin: 60px auto 20px;
+      text-align: center;
+      font-size:20px;
+    }
+    &:after {
+      content: "";        
+      display: block;
+      margin: 30px 0px 50px;
+      width: 80px;
+      padding: 3px 0 0 0;
+      background-color: #F6F3A6;    
+      @include for-mobile-tablet-all {   
+        margin: 20px auto 30px;
+        width: 35px;
+        padding: 3px 0 0 0;
+        background-color: #F6F3A6; 
+      }
+    }
+  }
+  .two {    
+    max-width: calc(360px * 3);
+    margin: 0 auto;
+    border:1px;
+    font-size: 26px;
+    color: #000;
+    @include for-mobile-tablet-all {
+
+      text-align: center;
+      font-size: 17px;        
+    }
+    b {
+      font-size: 26px;
+      font-weight: bolder;
+      @include for-mobile-tablet-all {
+        font-size: 17px;
+      }
+    }
+    strong{
+      font-size: 20px;
+      @include for-mobile-tablet-all {
+        font-size: 17px;
+      }
+    }
+  }
+  .three {
+    padding-top: 100px;
+    padding-left: 140px;
+    font-size: 30px;
+    font-weight: bold;
+    color: #F5B04F;
+    @include for-mobile-all {
+      padding-left: 80px;
+      padding-top: 30px;
+      font-size: 15px;
+    }
+    p{
+      font-size: 20px;
+      color:$black;
+      @include for-mobile-all {
+        font-size: 10px;
+      }
+    }
+  }
+}

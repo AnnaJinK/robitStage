@@ -1,0 +1,136 @@
+.contents__list {
+  min-height: 100%;
+
+  .list-toy {
+    width: 100%;
+    table-layout: fixed;
+    border-collapse: collapse;
+
+    thead {
+      background: #f0f3f5;
+      border: 1px solid #c8ced3;
+      color: #23282c;
+      line-height: 1.5;
+
+      th {
+        padding: 12px;
+        height: 20px;
+        color: #5c6873;
+        font-weight: bold;
+        text-align: left;
+
+        &.list__row-1 {
+          width: 10%;
+          text-align: center;
+        }
+
+        &.list__row-2 {
+          width: 20%;
+        }
+
+        &.list__row-3 {
+          width: 20%;
+        }
+
+        &.list__row-4 {
+          width: 40%;
+        }
+
+        &.list__row-5 {
+          width: 10%;
+        }
+      }
+    }
+
+    tbody {
+      background: #fff;
+      border: 1px solid #c8ced3;
+
+      tr {
+        cursor: pointer;
+
+        &:hover {
+          background-color: #e4e5e6;
+        }
+      }
+
+      td {
+        border-top: 1px solid #c8ced3;
+        padding: 12px;
+        min-height: 22px;
+        color: #23282c;
+        text-align: left;
+        line-height: 27px;
+
+        &:first-child {
+          text-align: center;
+        }
+
+        &:last-child {
+          text-align: center;
+        }
+
+        label {
+          display: inline-block;
+          position: relative;
+          padding-left: 35px;
+          height: 22px;
+          cursor: pointer;
+          -webkit-user-select: none;
+          -moz-user-select: none;
+          -ms-user-select: none;
+          user-select: none;
+          font-size: 0;
+          text-indent: -9999px;
+
+          &:hover input ~ .checkmark {
+            background-color: #ccc;
+          }
+
+          &:checked ~ .checkmark {
+            background-color: #2196F3;
+          }
+
+          input[type="checkbox"] {
+            position: absolute;
+            opacity: 0;
+            cursor: pointer;
+            height: 0;
+            width: 0;
+            // -webkit-appearance: checkbox;
+            // -moz-appearance: checkbox;
+            // appearance: checkbox;
+
+            &:checked ~ .checkmark:after {
+              display: block;
+            }
+          }
+
+          .checkmark {
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 25px;
+            width: 25px;
+            background-color: #ddd;
+
+            &:after {
+              content: "";
+              position: absolute;
+              display: none;
+              left: 9px;
+              top: 5px;
+              width: 5px;
+              height: 10px;
+              border: solid white;
+              border-width: 0 3px 3px 0;
+              -webkit-transform: rotate(45deg);
+              -ms-transform: rotate(45deg);
+              transform: rotate(45deg);
+            }
+          }
+        }
+      }
+    }
+  }
+}

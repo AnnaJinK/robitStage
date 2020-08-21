@@ -1,0 +1,62 @@
+{
+  "banner.title": "Robits. Moving Paper Toy",
+  "banner.subtitle": "A Paper Toy by which children can learn mechanical engineering",
+  "toy.buy": "Go to buy!",
+
+  "toy.magi.title": "The robits magician, Magi",
+  "toy.magi.name": "Name : Magi",
+  "toy.magi.model": "No. of Model : RB-P01",
+  "toy.magi.extra": "Height : 8cm (Never took off his hat)",
+  "toy.magi.desc": "The first Robits Magi is a master of hat trick. No one can find where all the pigeons and cards came from!",
+
+  "toy.assi.title": "The assistant magician, Assi",
+  "toy.assi.name": "Name : Assi",
+  "toy.assi.model": "No. of Model : RB-P02",
+  "toy.assi.desc": "One and only magician assistant in the world who can perform body separation magic. Mr. Magi`s request is getting difficult day after day. However, Assi hasn`t faild. So far...",
+
+  "toy.poli.title": "The robits police, Poli",
+  "toy.poli.name": "Name : Poli",
+  "toy.poli_e.name":"Name : Easy Poli",
+  "toy.poli.model": "No. of Model : RB-P03",
+  "toy.poli_e.model": "No. of Model : RB-R01",
+  "toy.poli.desc": "Genius police Poli undertakes the responsibility of justice and safety of the robbit world. Poli is famous for solving all the challenges easily. However, it seems like he met the greatest rival in his robbit life.",
+
+  "toy.arr.title": "The detective, Arr",
+  "toy.arr.name": "Name : Arr",
+  "toy.arr.model": "No. of Model : RB-P04",
+  "toy.arr.desc": "Arr is time traveling robits. His time traveling ability helps a lot to solve mystery cases. However, while increases the unsolved cases, he looks happy in some reasons.",
+
+  "toy.chefu.title": "The mega influencer, Chefu",
+  "toy.chefu.name": "Name : Chefu",
+  "toy.chefu.model": "No. of Model : RB-P05",
+  "toy.chefu.extra": "Food Portions: Not Measurable",
+  "toy.chefu.desc": "Chefu always wanted to be a star chef like Gordon Ramsay. However, whatever foods or ingredients in front of him disappeared like there`s a blackhole in his stomach. So, he couldn`t do any cooking so far. But somehow his tasting blog hits the jackpot.",
+
+  "toy.prin.title": "The sophomore angel, Prin",
+  "toy.prin.name": "Name : Prin",
+  "toy.prin.model": "No. of Model : RB-P06",
+  "toy.prin.extra":"Grade : Sophomore",
+  "toy.prin.desc": "The Angel Prin who is full of passion wanting to be a math teacher still has a long way to graduate from university. Prin needs some methods to get higher grades!",
+
+  "toy.meta.title": "The professor Angel, Meta",
+  "toy.meta.name": "Name : Meta",
+  "toy.meta.model": "No. of Model : RB-P07",
+  "toy.meta.extra": "For Fun : Watch Pro Games",
+  "toy.meta.desc": "The math teacher of all angels! The greatest angel who knows everything! Meta, who always seems to study, has a hobby that can hardly be told to students...",
+
+  "toy.domi.title": "The Graduating-class Angel, Domi",
+  "toy.domi.name": "Name : Domi",
+  "toy.domi.model": "No. of Model : RB-P08",
+  "toy.domi.extra": "Teaching Range : Math II, Differential and Integral",
+  "toy.domi.desc": "What is graduation? What are grades? Domi thinks there is something more important in his university life. So, Prin has never seen Domi study. Domi is always busy traveling.",
+
+  "toy.sake.title": "The Master of Salmon Sushi, SAKÉ",
+  "toy.sake.name": "Name : Sake",
+  "toy.sake.model": "No. of Model : RB-P09",
+  "toy.sake.desc": "Salmon is good for skin and brain. That`s why it`s especially popular among ladies. So, Saké wants to live as Salmon Sushi for its popularity.",
+
+  "toy.tama.title": "The Master of Egg Sushi, TAMA",
+  "toy.tama.name": "Name : Tama",
+  "toy.tama.model": "No. of Model : RB-P10",
+  "toy.tama.desc": "Today Tama is continuously whisking eggs again and again. Since the end of a sushi course is always the egg sushi, Tama devotes his heart and soul into a single egg; in order to make the utmost egg, Tama devotes his heart and soul into a single egg; in order to make the utmost egg, Tama is the first to go to work and the last to go home."
+}

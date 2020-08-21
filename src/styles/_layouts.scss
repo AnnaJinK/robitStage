@@ -1,0 +1,47 @@
+@import '../lib/mixin.scss';
+
+.container-contents {
+  display: block;
+
+  .area {
+    width: 100%;
+
+    h1.area__title {
+      position: relative;
+      z-index: 2;
+      font-size: 35px;
+      line-height: 52px;
+      font-weight: bold;
+      color: #282828;
+      text-align: center;
+      text-transform: capitalize;
+
+      &:after {
+        content: "";
+        position: absolute;
+        left: 50%;
+        bottom: -18px;
+        display: inline-block;
+        width: 32px;
+        height: 4px;
+        margin-left: -16px;
+        background-color: #282828;
+        border-radius: 2px;
+      }
+
+      @include for-mobile-tablet-all {
+        font-size: 30px;
+      }
+    }
+
+    .area-inner {
+      width: 100%;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .area__contents {
+      font-size: 0;
+    }
+  }
+}
